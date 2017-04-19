@@ -1,4 +1,4 @@
-*****Team JoNiVaRaP******
+#*****Team JoNiVaRaP*****
 
 Transit Database System is a database that would manage the operations of a transit system. The three main tables would include Bus, Employee, Login, Training and Schedule table (currently UGA Transit, can be modified to a general construct).   
 
@@ -12,6 +12,6 @@ Database: MySQL , PhpMyadmin with Wamp Server
 
 This project demonstrate how to create a simple CRUD application with Play. A screencast to the project exist on [playframework.com](http://playframework.com)
 
-# Salted hashing used for Login table. Please register yourself as a user to login. Previous passwords may not apply.
+Salted hashing used for Login table. Please register yourself as a user to login. Previous passwords may not apply.
 
 
