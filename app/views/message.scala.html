@@ -1,0 +1,72 @@
+@(message: String)
+
+
+@main("Add Employee") {
+
+<!DOCTYPE html>
+    <html>
+        <title>Admin Page</title>
+        <head>
+            <link type="text/css" rel="stylesheet" href="@routes.Assets.at("stylesheets/page.css")">
+        </head>
+
+        <body>
+
+            <div id="container">
+
+                <div id="header" style="background-color:#400000;height:80px;text-align:center;width:100%;">
+
+                    <p><img src="@routes.Assets.at("images/banner_uga.png")"  height=80px style="float:left;" />
+
+                    </p>
+                </div>
+
+                <div class="gap">
+                </div>
+
+
+                <div class="gap">
+                </div>
+
+                <div id="Left-Menu" style="background-color:#400000;height:460px;width:15%;float:left;">
+                    <br>
+                    <ul>
+
+                        <li style="margin-left:20px;"><a href="@routes.Application.addEmployee" style="width:150px">Add New Employee</a></li>
+                        <li style="margin-left:20px;"><a href="@routes.Application.createUser" style="width:150px">Create New User</a></li>
+                        <li style="margin-left:20px;"><a href="displayshifts.scala.html" style="width:150px">View All Shifts</a></li>
+                        <li style="margin-left:20px;"><a href="@routes.Application.displayBuses()" style="width:150px">View All Buses</a></li>
+                        <li style="margin-left:20px;"><a href="availableshifts.jsp" style="width:150px">View Available Shifts</a></li>
+                        <li style="margin-left:20px;"><a href="@routes.Application.index()" style="width:150px">Log Out</a></li>
+
+                    </ul>
+
+
+                </div>
+
+                <div style="height:400px;width:.4%;float:left;">
+                </div>
+
+                <div id="content" style="background-color:#EEEEEE;height:460px;width:84.6%;float:left;">
+
+
+                    <p> @message</p>
+
+
+
+                </div>
+
+
+                <div style="height:460px"></div>
+
+                <div id="footer" style="background-color:black;text-align:center;height:30px">
+                    <p style="color:white">Copyright � Team JoNiVaRaP</p>
+                </div>
+
+
+            </div>
+
+        </body>
+    </html>
+
+}

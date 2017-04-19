@@ -1,0 +1,145 @@
+@()
+
+
+@main("UGA Bus Transit") {
+
+  
+
+    <!DOCTYPE html>
+    <html>
+        <title>Home</title>
+
+        <head>
+            <link type="text/css" rel="stylesheet" href="@routes.Assets.at("stylesheets/page.css")">
+            <script type="text/javascript" src=../js/userLogin.js></script>
+        </head>
+
+        <body>
+
+            <div id="container">
+
+                <div id="header" style="background-color:#400000;height:80px;text-align:center;width:100%;">
+
+                    <p><img src="@routes.Assets.at("images/banner_uga.png")" width="100%" height=80px style="float:left;">
+
+                    </p>
+
+                </div>
+
+                <div class="gap">
+                </div>
+
+                <div id="MenuBar" style="background-color:black; height:30px; text-align:center; width:100%;">
+
+                    <ul>
+
+                        <li style="margin-left:1050px;"><a href="contact.html">Contact Us</a></li>
+                        <li><a href="help.html">Help</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+
+
+                </div>
+
+                <div class="gap">
+                </div>
+
+
+                <div id="companyInfo" style="background-color:white;height:400px;width:80%;float:left;">
+
+                    <img style="float:left" src="@routes.Assets.at("images/ugaBusNS.png")" >
+
+                    <br>
+                    <!--<form  style="width:300px;margin-left:20px; float:left">-->
+
+                        
+
+
+
+                    <!--    <br><br>-->
+
+                    <!--</form>-->
+
+                    <br>
+                    <br><br><br>
+                    <form  style="width:400px;margin-left:50px; float:left">
+                        <fieldset>
+                        
+                            <legend style="font-size:24px;"><b>UGA's Vehicle Transit System Success Story</b></legend>
+
+                            <p><i>The Transit System at UGA are well designed. The detailed analysis highlights our strengths and exposes our weaknesses so that we can improve upon them in time.<br>
+                                <b>JoNiVaRaP<b></i></p>
+                        </fieldset>
+                    </form>
+
+
+
+
+
+
+
+                </div>
+
+
+                <div id="login" style="background-color:#400000;height:400px;width:20%;float:left;">
+
+
+                    <br><br><br><br>
+
+                    <form name="form3" method="post" action="@routes.LoginController.submit()">
+                        <fieldset>
+
+                            <legend style="font-size:15px; color:white"><i>Login:</i></legend>
+                            <table  width = "40%"  border="0" align = "center"   style="cellpadding="2" cellspacing="5"">
+
+
+                            <tr>
+                                <td><font style="color:white">  Username <font></td>
+                                <td> <input type="text" name="userName" maxlength="50"> </td> <br>
+                            </tr>
+
+                            <tr>
+                                <td><font style="color:white">  Password </font> </td>
+                                <td> <input type="password" name="userPassword"></td> <br>
+
+                            </tr>
+
+
+
+                            <tr>
+
+                                <td  >&nbsp;</td>
+                                <td>
+
+                                    <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                    <input type="submit" name="Submit" value="Sign in">
+
+                            </tr>
+
+
+
+                            </table>
+
+                            <center><font color="red"><p id="error"></p></font></center>
+                        </fieldset>
+
+                    </form>
+                </div>
+
+
+                <div style="height:400px"></div>
+
+                <div id="footer" style="background-color:black;text-align:center;height:30px">
+                    <a style="color:white;font-size:10px;"href="#" target="_blank">Copyright www.UGATransitSystem.com</a></font>
+                </div>
+
+
+            </div>
+
+        </body>
+    </html>
+
+}
+

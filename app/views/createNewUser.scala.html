@@ -1,0 +1,104 @@
+@()
+
+
+@main("Add User") {
+
+<!DOCTYPE html>
+    <html>
+        <title>Admin Page</title>
+        <head>
+            <link type="text/css" rel="stylesheet" href="@routes.Assets.at("stylesheets/page.css")">
+        </head>
+
+        <body>
+
+            <div id="container">
+
+                <div id="header" style="background-color:#400000;height:80px;text-align:center;width:100%;">
+
+                    <p><img src="@routes.Assets.at("images/banner_uga.png")"  height=80px style="float:left;" />
+
+                    </p>
+                </div>
+
+                <div class="gap">
+                </div>
+
+                <div class="gap">
+                </div>
+
+                <div id="Left-Menu" style="background-color:#400000;height:460px;width:15%;float:left;">
+                    <br>
+                    <ul>
+                    
+                    <li style="margin-left:20px;"><a href="@routes.Application.employeeDetails()" style="width:150px">View Employees</a></li>
+                    <li style="margin-left:20px;"><a href="@routes.Application.addEmployee()" style="width:150px">Add New Employee</a></li>
+                    <li style="margin-left:20px;"><a href="assignshift.scala.html.jsp" style="width:150px">Assign Shift</a></li>
+                    <li style="margin-left:20px;"><a href="displayshifts.scala.html" style="width:150px">View All Shifts</a></li>
+                    <li style="margin-left:20px;"><a href="@routes.Application.displayBuses()" style="width:150px">View All Buses</a></li>
+                    <li style="margin-left:20px;"><a href="availableshifts.jsp" style="width:150px">View Available Shifts</a></li>
+                    <li style="margin-left:20px;"><a href="@routes.Application.userDetails()" style="width:150px">View Users</a></li>
+                    <li style="margin-left:20px;"><a href="@routes.Application.createUser()" style="width:150px">Add New User</a></li>
+                    <li style="margin-left:20px;"><a href="@routes.Application.index()" style="width:150px">Log Out</a></li>
+                 </ul>
+
+
+                </div>
+
+                <div style="height:400px;width:.4%;float:left;">
+                </div>
+
+                <div id="content" style="background-color:#EEEEEE;height:460px;width:84.6%;float:left;">
+
+
+                    <form name="form3" method="post" action="@routes.EmployeeController.createUser()">
+
+
+                        <p><font color="#400000"><b>Home > Add New User</b></font></p>
+                        <p align="center">"<font color="red">*are mandatory fields</font>.</p>
+                        <table align="center">
+
+
+                            <tr>
+                                <td align="right"><b><label>User ID</label><font color="red">*</font>:</b></td>
+                                <td align="left"><input type="email" name="userId"></td>
+                            </tr>
+                            <tr>
+                                <td align="right"><b><label>Password</label><font color="red">*</font>:</b></td>
+                                <td align="left"><input type="password" name="password"></td>
+                            </tr>
+                            <tr>
+                                <td align="right"><b><label>Level</label><font color="red">*</font>:</b></td>
+                                <td align="left"><input type="text" name="level"></td>
+                            </tr>
+
+
+
+                            <tr>
+                                <td align="right">&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Create User"></td>
+                                <td align="left">&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Reset"></td>
+                            </tr>
+
+                        </table>
+
+
+                    </form>
+
+
+
+                </div>
+
+
+                <div style="height:460px"></div>
+
+                <div id="footer" style="background-color:black;text-align:center;height:30px">
+                    <p style="color:white">Copyright � Team JoNiVaRaP</p>
+                </div>
+
+
+            </div>
+
+        </body>
+    </html>
+
+}
